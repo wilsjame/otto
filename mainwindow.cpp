@@ -137,3 +137,22 @@ void MainWindow::on_pushButton_installLatestJenkinsBuild_clicked()
 {
     std::system((desktop_path + file_relative).toStdString().c_str());
 }
+
+void MainWindow::on_pushButton_deleteOldBuilds_clicked()
+{
+    QDir dir(desktop_path);
+    dir.setNameFilters(QStringList() << "*.*");
+    dir.setFilter(QDir::Files);
+
+    // Delete old builds
+    foreach(QString dirFile, dir.entryList())
+    {
+
+        if (dirFile != file_relative)
+        {
+            dir.remove(dirFile);
+        }
+
+    }
+
+}

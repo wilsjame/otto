@@ -26,6 +26,8 @@ private slots:
 
     void on_pushButton_installLatestJenkinsBuild_clicked();
 
+    void on_pushButton_deleteOldBuilds_clicked();
+
 private:
     Ui::MainWindow *ui;
 

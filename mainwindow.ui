@@ -164,6 +164,19 @@
      <string>Install</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="pushButton_deleteOldBuilds">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>120</y>
+      <width>91</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Delete Old Builds</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -171,7 +184,7 @@
      <x>0</x>
      <y>0</y>
      <width>361</width>
-     <height>20</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>
